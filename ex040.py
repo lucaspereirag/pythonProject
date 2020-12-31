@@ -17,14 +17,16 @@ elif 5.0 <= media < 7.0:
     print('Aluno em Recuperação!')
     print('Aluno está em recuperação')
 
-    nota3 = ceil(float(input('Digite o valor da Nota da Prova de Recuperação: ')))
+    nota3 = round(float(input('Digite o valor da Nota da Prova de Recuperação: ')))
 
     if nota3 >= 7.0:
         print('Parabéns, você recuperou a nota!'
               '\nSua nota foi de {}'
               '\nAluno aprovado!'.format(nota3))
     else:
-        print('Não recuperou a nota, aluno reprovado.')
+        print('Sua nota foi de {}'
+              '\nNão recuperou a nota, aluno reprovado.'
+              .format(nota3))
 else:
     print('Sua média foi inferior a 5.0'
           '\nReprovado.')
