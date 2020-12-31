@@ -24,5 +24,5 @@ elif 5.0 <= media < 7.0:
     else:
         print('Não recuperou a nota, aluno reprovado.')
 else:
-    print('Sua média foi inferior a 5.0.'
+    print('Sua média foi inferior a 5.0'
           '\nReprovado.')
