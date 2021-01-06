@@ -1,14 +1,18 @@
-numero = int(input('Primeiro Número: '))
-sequencia = int(input('Quantos números na sequência Fibonacci: '))
-count = 0
-antecessor = 0
-sucessor = 0
+print('-' * 30)
+print('Sequência de Fibonacci')
+print('-' * 30)
 
-while sequencia > count:
-    if numero == 1:
-        print('{} -> '.format(numero), end='')
-    print('{} -> '.format(numero), end='')
-    antecessor = numero - antecessor
-    numero = numero + antecessor
+n = int(input('Termos: '))
+t1 = 0
+t2 = 1
+print('~' * 30)
+print('{} ~~> {}'.format(t1, t2), end='')
+count = 3
+while count <= n:
+    t3 = t1 + t2
+    print(' ~~> {}'.format(t3), end='')
+    t1 = t2
+    t2 = t3
     count += 1
-print('FIM')
+print(' ~~> FIM')
+
