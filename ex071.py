@@ -1,3 +1,7 @@
+print('-'* 35)
+print('{:^35}'.format('LG Bank $$'))
+print('-' * 35)
+
 sacar = int(input('Digite um valor a sacar: R$ '))
 #cédulas:
 cem = 100
@@ -44,3 +48,9 @@ while True:
         print(f'Total de {contum} cédulas de R$ 1')
     if sacar == 0:
         break
+print('\nObrigado por utilizar nosso caixa eletrônico.'
+      '\nLG Bank agradece a sua visita. '
+      '\n#### Máscaras salvam vidas ####')
+
+
+#exercício finalizado.
