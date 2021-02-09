@@ -1,5 +1,9 @@
 
 def notas():
+    """
+    Função que pergunta qtd de notas e os valores.
+    :return: Retorna um dicionário com infos das notas
+    """
     dictNotas = {}
     listaNotas = []
     from statistics import mean
@@ -21,6 +25,7 @@ def notas():
     dictNotas['situacao'] = situacao
     listaNotas.clear()
     return dictNotas
+
 nome = str(input('Digite o nome do aluno: '))
 notaNome = notas()
 print(f'Os valores de {nome}: \n{notaNome}')
