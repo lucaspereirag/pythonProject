@@ -1,4 +1,8 @@
 def introducao():
+    """
+    Retorna um painel verde iniciando o sistema.
+    :return:
+    """
     cor = ['\033[m',  # 0 - Limpa
            '\033[42m',  # 1 - Verde
            '\033[46m',  # 2 - Azul
@@ -14,6 +18,11 @@ def introducao():
     print(f'{cor[0]}')
 
 def funcao():
+    """
+    Executa um painel solicitando uma função
+    Retorna a descrição da função na tela.
+    :return:
+    """
     cor = ['\033[m',  # 0 - Limpa
            '\03342m',  # 1 - Verde
            '\033[46m',  # 2 - Azul
